@@ -140,6 +140,6 @@ func main() {
 
 	ch, length := sendOrders(Order{"Buy", 42}, Order{"Sell", 8})
 
+	//updates the binary tree
 	go recieveOrder(ch, tch, t, length)
-
 }
